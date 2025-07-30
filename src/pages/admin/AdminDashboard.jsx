@@ -54,6 +54,10 @@ const AdminDashboard = () => {
 
   const getImageUrl = (imagePath) => {
     if (!imagePath) return null;
+    // Jika sudah URL penuh dari Cloudinary
+    if (imagePath.startsWith("http")) return imagePath;
+
+    // Jika path lokal
     const cleanedPath = imagePath.replace(/\\/g, "/");
     return `${api}/${cleanedPath}`;
   };

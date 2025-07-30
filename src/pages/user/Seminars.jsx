@@ -43,7 +43,7 @@ const Seminars = () => {
           >
             {seminar.image ? (
               <img
-                src={`${api}/${seminar.image.replace(/\\/g, "/")}`}
+                src={seminar.image}
                 alt={seminar.title}
                 className="w-full h-48 object-cover"
               />

@@ -1,12 +1,27 @@
-# React + Vite
+# 🎫 Event Management System - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend aplikasi **Event Management System (EMS)** untuk menampilkan daftar seminar, melakukan pendaftaran, dan melihat e-ticket. Dibangun menggunakan **React + Vite** dan terhubung ke backend berbasis Node.js.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Fitur
 
-## Expanding the ESLint configuration
+- 🔐 Autentikasi Login & Register
+- 📋 Daftar seminar dinamis dari API
+- 📝 Pendaftaran seminar dengan generate tiket
+- 🎟️ Halaman e-ticket pengguna
+- 🛠️ Admin Dashboard (CRUD Seminar)
+- 📦 PDF Export & QR Code Generator
+- 🎨 Responsive dengan Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 19 + Vite
+- **Routing**: React Router v7
+- **HTTP**: Axios
+- **Styling**: Tailwind CSS
+- **QR Code**: react-qr-code, qrcode.react
+- **Alerts**: SweetAlert2
+- **Toasts**: React Toastify

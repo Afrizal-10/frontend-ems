@@ -13,8 +13,8 @@ const Footer = () => {
         </div>
         {/*  Media sosial */}
         <div className="text-center sm:text-right">
-          <h3 className="text-lg font-semibold mb-2">Ikuti Kami</h3>
-          <div className="flex justify-center sm:justify-end space-x-4">
+          <h3 className="text-lg font-semibold mb-2">Ikuti Saya</h3>
+          <div className="flex justify-center sm:justify-end space-x-2">
             <a
               href="https://www.instagram.com/izall10_?utm_source=qr&igsh=d294OTM1cGtlYzh6"
               className="p-2 bg-gray-800 rounded-full hover:bg-pink-500 transition"
