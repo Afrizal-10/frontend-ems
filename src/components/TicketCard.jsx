@@ -3,17 +3,15 @@ import axios from "axios";
 
 const TicketCard = () => {
   const [tickets, setTickets] = useState([]);
+  const api = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     const fetchTickets = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get(
-          "http://localhost:5000/api/registrations/me/all",
-          {
-            headers: {Authorization: `Bearer ${token}`},
-          }
-        );
+        const res = await axios.get(`${api}/api/registrations/me/all`, {
+          headers: {Authorization: `Bearer ${token}`},
+        });
         setTickets(res.data);
       } catch (error) {
         console.error(
@@ -23,7 +21,7 @@ const TicketCard = () => {
       }
     };
     fetchTickets();
-  }, []);
+  }, [api]);
 
   return (
     <div className="p-6 bg-gray-100 min-h-screen">
